@@ -7,6 +7,7 @@ exports.create = async (req,res) => {
         return;
     }
 
+
     const { productName, productType, originalPrice, offerRate, displayedPrice,productDescription } = req.body;
 
     // new package
@@ -19,6 +20,7 @@ exports.create = async (req,res) => {
         productDescription, 
     })
 
+    
     // save booking details in the database
     await product
         .save()
