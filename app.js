@@ -23,6 +23,7 @@ app.use(express.json());
 app.use('/', require('./routes/driverRoute'));
 app.use('/', require('./routes/vehicleRoute'));
 app.use('/', require('./routes/offerRoute'));
+app.use('/', require('./routes/ProductRoute'));
 // app.use('/', upload.single('image'), require('./routes/imageRoute'));
 
 
