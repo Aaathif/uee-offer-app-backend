@@ -14,12 +14,15 @@ dotenv.config();
 // Connect to MongoDB
 connectDB();
 
+app.use(cors());
+
 // Parse JSON request bodies
 app.use(express.json());
 
 // Set up your routes
 app.use('/', require('./routes/driverRoute'));
 app.use('/', require('./routes/vehicleRoute'));
+app.use('/', require('./routes/offerRoute'));
 // app.use('/', upload.single('image'), require('./routes/imageRoute'));
 
 
